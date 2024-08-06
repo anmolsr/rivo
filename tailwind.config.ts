@@ -14,6 +14,22 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors: {
+      'rivo':{
+        100:'#D3E2D7',
+        200:'#A9D4BA',
+        300:'#93B9A2',
+        400:'#C2EFD4',
+        500:'#6BC785',
+        600:'#267D49',
+        700: '#224F34',
+      },
+      'rivoText':{
+        100:'#373737',
+        200:'#454545'
+      }
+
+    }
   },
   plugins: [],
 };
