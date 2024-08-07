@@ -29,7 +29,7 @@ export const RIVOPRODUCTCATEGORY = [
       "Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.",
     link: "/",
     imgObj:{
-      url:"/assets/accessories.jpg",
+      url:"/assets/accessories.webp",
       alt:"Accessories"
     }
   },
@@ -40,7 +40,7 @@ export const RIVOPRODUCTCATEGORY = [
       "Explore a stunning range of designer dresses, including evening gowns and chic day dresses.",
     link: "/",
     imgObj:{
-      url:"/assets/dress.jpg",
+      url:"/assets/dress.webp",
       alt:"Dresses"
     }
   },
@@ -51,7 +51,7 @@ export const RIVOPRODUCTCATEGORY = [
       "Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.",
     link: "/",
     imgObj:{
-      url:"/assets/outerwear.jpg",
+      url:"/assets/outerwear.webp",
       alt:"Outerwear"
     }
   },
@@ -66,7 +66,7 @@ export const RIVOPRODUCT = [
     isBest: true,
     link: "/",
     imgObj:{
-      url:"/assets/regular.jpg",
+      url:"/assets/regular.webp",
       alt:"Regular Fit Long Sleeve Top"
     }
   },
@@ -78,7 +78,7 @@ export const RIVOPRODUCT = [
     isBest: true,
     link: "/",
     imgObj:{
-      url:"/assets/black.jpg",
+      url:"/assets/black.webp",
       alt:"Black Crop Tailored Jacket"
     }
   },
@@ -90,7 +90,7 @@ export const RIVOPRODUCT = [
     isBest: true,
     link: "/",
     imgObj:{
-      url:"/assets/textured.jpg",
+      url:"/assets/textured.webp",
       alt:"Textured Sunset Shirt"
     }
   },
@@ -102,7 +102,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/spread-collar.jpg",
+      url:"/assets/spread-collar.webp",
       alt:"Spread Collar Shirt"
     }
   },
@@ -114,7 +114,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/white-solid.jpg",
+      url:"/assets/white-solid.webp",
       alt:"White Solid Formal Shirt"
     }
   },
@@ -126,7 +126,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/shine-on-me.jpg",
+      url:"/assets/shine-on-me.webp",
       alt:"Shine On Me Blouse"
     }
   },
@@ -138,7 +138,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/gray-solid.jpg",
+      url:"/assets/gray-solid.webp",
       alt:"Gray Solid Padded Jacket"
     }
   },
@@ -150,7 +150,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/printed-loose.jpg",
+      url:"/assets/printed-loose.webp",
       alt:"Printed Loose T-shirt"
     }
   },
@@ -162,7 +162,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/summer-wind.jpg",
+      url:"/assets/summer-wind.webp",
       alt:"Summer Wind Crop Shirt"
     }
   },
@@ -174,7 +174,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/tailored-jacket.jpg",
+      url:"/assets/tailored-jacket.webp",
       alt:"Tailored Jacket"
     }
   },
@@ -186,7 +186,7 @@ export const RIVOPRODUCT = [
     isBest: false,
     link: "/",
     imgObj:{
-      url:"/assets/solid-round.jpg",
+      url:"/assets/solid-round.webp",
       alt:"Solid Round Neck T-shirt"
     }
   }

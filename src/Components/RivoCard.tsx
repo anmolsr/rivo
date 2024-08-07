@@ -1,12 +1,12 @@
-import star from "../../public/fi-ss-star.svg";  // Importing star icon
-import line from "../../public/line.svg";  // Importing line image
-import Image from "next/image";  // Importing Image component from Next.js
-import React from "react";  // Importing React library
+import star from "../../public/fi-ss-star.svg"; // Importing star icon
+import line from "../../public/line.svg"; // Importing line image
+import Image from "next/image"; // Importing Image component from Next.js
+import React from "react"; // Importing React library
 
 type Props = {
-  cardProduct?: TProduct;  // Defining optional type for cardProduct
-  carCategory?: TClothes;  // Defining optional type for carCategory
-  size: string;  // Defining type for size
+  cardProduct?: TProduct; // Defining optional type for cardProduct
+  carCategory?: TClothes; // Defining optional type for carCategory
+  size: string; // Defining type for size
 };
 
 // RivoCard Component
@@ -25,7 +25,7 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
               alt={cardProduct?.imgObj.alt}
               width={size === "big" ? 430 : 566}
               height={size === "big" ? 430 : 378}
-              priority
+              sizes="(max-width: 768px) 420px, 820px"
               quality={100}
             />
           </div>
@@ -61,8 +61,8 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
               alt={carCategory.imgObj.alt}
               width={size === "big" ? 430 : 566}
               height={size === "big" ? 430 : 378}
-              priority
               quality={100}
+              sizes="(max-width: 768px) 420px, 820px"
             />
           </div>
 
@@ -74,7 +74,9 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
             </h3>
             {/* Category description */}
             <div className="text-rivoText-100">
-              <p className="text-[16px] leading-snug">{carCategory.description}</p>
+              <p className="text-[16px] leading-snug">
+                {carCategory.description}
+              </p>
             </div>
           </div>
         </div>

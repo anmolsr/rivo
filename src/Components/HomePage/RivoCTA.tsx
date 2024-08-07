@@ -24,6 +24,7 @@ const RivoCTA = () => {
             priority
             alt={ctaObj.imgObj.alt}
             quality={100}
+            sizes="(max-width: 768px) 420px, 820px"
           />
         </div>
         
