@@ -18,7 +18,7 @@ export default function Home() {
   const productCategory = RIVOPRODUCTCATEGORY;
   return (
     <main>
-      <RivoHero />
+      {/* <RivoHero />
       <div className="rivContainer">
         <BestSelling
           contentObj={pageContent.sectionBest}
@@ -33,7 +33,7 @@ export default function Home() {
           contentObj={pageContent.sectionClothes}
           prodCategory={productCategory}
         />
-      </div>
+      </div> */}
     </main>
   );
 }
