@@ -1,8 +1,9 @@
 import RivoHero from "@/Components/Hero/RivoHero";
 import BestSelling from "@/Components/HomePage/BestSelling";
+import DesignerClothes from "@/Components/HomePage/DesignerClothes";
 import OurProducts from "@/Components/HomePage/OurProducts";
 import RivoCTA from "@/Components/HomePage/RivoCTA";
-import { RIVOCONTENT, RIVOPRODUCT } from "@/Constants/data";
+import { RIVOCONTENT, RIVOPRODUCT, RIVOPRODUCTCATEGORY } from "@/Constants/data";
 
 export default function Home() {
   //page content
@@ -13,6 +14,8 @@ export default function Home() {
   const bestProd = products.filter((item: TProduct) => item.isBest);
   //normal products
   const normalProd = products.filter((item: TProduct) => !item.isBest);
+  //product category
+  const productCategory = RIVOPRODUCTCATEGORY;
   return (
     <main>
       <RivoHero />
@@ -26,7 +29,10 @@ export default function Home() {
           bestProducts={normalProd}
         />
         <RivoCTA />
-        <div></div>
+        <DesignerClothes
+          contentObj={pageContent.sectionClothes}
+          prodCategory={productCategory}
+        />
       </div>
     </main>
   );

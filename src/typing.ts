@@ -4,14 +4,14 @@ type TLink = {
 };
 
 type TImage = {
-  url:string;
-  alt:string;
-}
+  url: string;
+  alt: string;
+};
 
 type TContent = {
   title: string;
   description: string;
-}
+};
 type TMenu = TLink & {
   id: number;
 };
@@ -22,20 +22,17 @@ type THero = TContent & {
 };
 
 type TProduct = {
-  id: number,
-  title: string,
-  price: number,
-  rating: number,
-  isBest: boolean,
-  link: string,
-  imgObj:TImage
-}
+  id: number;
+  title: string;
+  price: number;
+  rating: number;
+  isBest: boolean;
+  link: string;
+  imgObj: TImage;
+};
 
-type TCard = {
-  imgObj:TImage,
-  title:string;
-  description?:string|null,
-  price?:number | null,
-  rating?:number | null,
-  size:string,
-}
+type TClothes = TContent & {
+  id: number;
+  link: string;
+  imgObj: TImage;
+};

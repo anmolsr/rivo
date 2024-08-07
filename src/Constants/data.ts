@@ -40,7 +40,7 @@ export const RIVOPRODUCTCATEGORY = [
       "Explore a stunning range of designer dresses, including evening gowns and chic day dresses.",
     link: "/",
     imgObj:{
-      url:"/assets/dresses.jpg",
+      url:"/assets/dress.jpg",
       alt:"Dresses"
     }
   },

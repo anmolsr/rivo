@@ -6,7 +6,7 @@ import RivoButton from "../RivoButtons/RivoButton";
 const RivoCTA = () => {
   const ctaObj = CTAOBJ;
   return (
-    <div className="bg-rivo-400 my-28 px-9 flex items-center">
+    <div className="bg-rivo-400 my-20 px-9 flex items-center">
       <div className="relative max-w-xl">
         <Image
           src={ctaObj.imgObj.src}
