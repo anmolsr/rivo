@@ -33,7 +33,8 @@ const RivoButton = ({ label, link, variant }: Props) => {
     return (
       <Link
         href={link}
-        className="bg-rivo-700 text-white text-xl py-4 px-16 uppercase rounded shadow-2xl"
+        className="bg-rivo-700 text-white text-lg px-10 md:text-xl py-4 md:px-16 uppercase rounded shadow-2xl"
+
       >
         {label}
       </Link>
