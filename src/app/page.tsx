@@ -28,7 +28,6 @@ export default function Home() {
           contentObj={pageContent.sectionBest}
           bestProducts={bestProd}
         />
-        {/*
         <OurProducts
           contentObj={pageContent.sectionProdcut}
           bestProducts={normalProd}
@@ -37,7 +36,7 @@ export default function Home() {
         <DesignerClothes
           contentObj={pageContent.sectionClothes}
           prodCategory={productCategory}
-        />*/}
+        />
       </div>
     </main>
   );

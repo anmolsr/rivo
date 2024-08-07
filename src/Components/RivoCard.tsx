@@ -67,14 +67,14 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
           </div>
 
           {/* Category details */}
-          <div className="text-center max-w-[420px] m-auto py-10">
+          <div className="text-center max-w-[420px] m-auto py-6 lg:py-10">
             {/* Category title */}
-            <h3 className="font-semibold mb-4 text-rivoText-100 text-[30px]">
+            <h3 className="font-semibold mb-2 lg:mb-4 text-rivoText-100 text-xl md:text-2xl lg:text-3xl">
               {carCategory.title}
             </h3>
             {/* Category description */}
             <div className="text-rivoText-100">
-              <p className="leading-snug">{carCategory.description}</p>
+              <p className="text-[16px] leading-snug">{carCategory.description}</p>
             </div>
           </div>
         </div>
