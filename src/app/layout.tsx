@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${robotoSlab.variable} ${rufina.variable}`}>
         <RivoHeader/>
       {children}
-      <footer className="min-h-60">
+      <footer className="min-h-10 lg:min-h-60">
 
       </footer>
       </body>

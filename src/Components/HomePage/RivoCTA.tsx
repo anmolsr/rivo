@@ -30,7 +30,7 @@ const RivoCTA = () => {
         
         {/* Text and button container */}
         <div>
-          <div className="text-center lg:max-w-[589px] md:ml-14 mt-4">
+          <div className="text-center lg:text-left lg:max-w-[589px] md:ml-14 mt-4">
             
             {/* CTA title */}
             <h2 className="font-robotoSlab lg:text-5xl">{ctaObj.title}</h2>
@@ -41,7 +41,7 @@ const RivoCTA = () => {
             </p>
             
             {/* Countdown timer */}
-            <div className="text-rivo-700 grid grid-cols-3 lg:gap-x-8 max-w-sm mx-auto">
+            <div className="text-rivo-700 grid grid-cols-3 lg:gap-x-8 max-w-sm mx-auto lg:mx-0">
               {/* Days */}
               <div className="bg-white mx-auto text-[16px] text-center space-y-2 rounded-md w-20 sm:w-[100px] h-20 sm:h-[100px] flex flex-col justify-center items-center">
                 <div className="font-semibold text-[32px]">

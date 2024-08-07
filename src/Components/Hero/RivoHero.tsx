@@ -16,7 +16,7 @@ const RivoHero = () => {
       <div className="rivContainer flex flex-col-reverse md:flex-row justify-between items-center">
         
         {/* Text and button container */}
-        <div className="m-auto mt-5 text-center max-w-sm lg:max-w-2xl md:text-left">
+        <div className="m-auto mt-5 text-center max-w-sm lg:m-0 lg:max-w-2xl md:text-left">
           
           {/* Hero title */}
           <h1 className="font-rufina text-3xl sm:text-5xl lg:text-7xl xl:text-[86px] leading-tight lg:leading-tight">

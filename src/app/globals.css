@@ -13,5 +13,5 @@ h2{
   @apply font-robotoSlab font-medium text-3xl md:text-5xl lg:text-[64px] lg:leading-relaxed;
 }
 .rivContainer{
-  @apply w-[96%] m-auto lg:w-[96%] 2xl:max-w-rivoWidth 2xl:w-full;
+  @apply w-[96%] m-auto lg:w-[96%] xl:max-w-rivoWidth xl:w-full;
 }

@@ -74,7 +74,7 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
             </h3>
             {/* Category description */}
             <div className="text-rivoText-100">
-              <p className="text-[16px] leading-snug">
+              <p className="text-[16px] leading-snug lg:text-base">
                 {carCategory.description}
               </p>
             </div>
