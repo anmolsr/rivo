@@ -1,0 +1,41 @@
+type TLink = {
+  href: string;
+  label: string;
+};
+
+type TImage = {
+  url:string;
+  alt:string;
+}
+
+type TContent = {
+  title: string;
+  description: string;
+}
+type TMenu = TLink & {
+  id: number;
+};
+
+type THero = TContent & {
+  buttonObj: TLink;
+  imageObj: TImage;
+};
+
+type TProduct = {
+  id: number,
+  title: string,
+  price: number,
+  rating: number,
+  isBest: boolean,
+  link: string,
+  imgObj:TImage
+}
+
+type TCard = {
+  imgObj:TImage,
+  title:string;
+  description?:string|null,
+  price?:number | null,
+  rating?:number | null,
+  size:string,
+}
