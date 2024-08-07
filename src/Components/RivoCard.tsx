@@ -1,17 +1,24 @@
-import star from "../../public/fi-ss-star.svg";
-import line from "../../public/line.svg";
-import Image from "next/image";
-import React from "react";
+import star from "../../public/fi-ss-star.svg";  // Importing star icon
+import line from "../../public/line.svg";  // Importing line image
+import Image from "next/image";  // Importing Image component from Next.js
+import React from "react";  // Importing React library
+
 type Props = {
-  cardProduct?: TProduct;
-  carCategory?: TClothes;
-  size: string;
+  cardProduct?: TProduct;  // Defining optional type for cardProduct
+  carCategory?: TClothes;  // Defining optional type for carCategory
+  size: string;  // Defining type for size
 };
+
+// RivoCard Component
+// This functional component displays either a product card or a category card based on the props provided.
+
 const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
   return (
-    <div>
+    <>
+      {/* If cardProduct prop is provided, render product card */}
       {cardProduct && (
-        <div>
+        <>
+          {/* Product image */}
           <div>
             <Image
               src={cardProduct.imgObj.url}
@@ -23,11 +30,14 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
             />
           </div>
 
+          {/* Product details */}
           <div className="text-center max-w-xs m-auto py-10">
-            <h3 className="font-semibold mb-4 text-rivoText-100">
+            {/* Product title */}
+            <h3 className="font-semibold mb-4 text-rivoText-100 text-lg lg:text-base">
               {cardProduct.title}
             </h3>
-            <div className="text-rivoText-200 flex justify-between max-w-56 m-auto">
+            {/* Product price and rating */}
+            <div className="text-rivoText-200 flex justify-between max-w-56 m-auto text-lg lg:text-base">
               <span>${cardProduct.price.toFixed(2)}</span>
               <span>
                 <Image priority src={line} alt="line" />
@@ -38,10 +48,13 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
               </span>
             </div>
           </div>
-        </div>
+        </>
       )}
+
+      {/* If carCategory prop is provided, render category card */}
       {carCategory && (
         <div>
+          {/* Category image */}
           <div>
             <Image
               src={carCategory.imgObj.url}
@@ -53,17 +66,20 @@ const RivoCard = ({ cardProduct, size, carCategory }: Props) => {
             />
           </div>
 
+          {/* Category details */}
           <div className="text-center max-w-[420px] m-auto py-10">
+            {/* Category title */}
             <h3 className="font-semibold mb-4 text-rivoText-100 text-[30px]">
               {carCategory.title}
             </h3>
+            {/* Category description */}
             <div className="text-rivoText-100">
               <p className="leading-snug">{carCategory.description}</p>
             </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

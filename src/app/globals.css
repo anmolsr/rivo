@@ -3,14 +3,14 @@
 @tailwind utilities;
 body, body p{
   font-family: var(--font-poppins);
-  @apply text-base font-medium leading-6;
+  @apply text-lg md:text-base font-medium leading-6;
 }
 
 h1,h2{
   @apply text-rivo-700;
 }
 h2{
-  @apply font-robotoSlab font-medium text-[64px] leading-relaxed;
+  @apply font-robotoSlab font-medium text-3xl md:text-5xl lg:text-[64px] lg:leading-relaxed;
 }
 .rivContainer{
   @apply w-[96%] m-auto lg:w-[96%] 2xl:max-w-rivoWidth 2xl:w-full;

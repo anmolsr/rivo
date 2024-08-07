@@ -3,7 +3,11 @@ import BestSelling from "@/Components/HomePage/BestSelling";
 import DesignerClothes from "@/Components/HomePage/DesignerClothes";
 import OurProducts from "@/Components/HomePage/OurProducts";
 import RivoCTA from "@/Components/HomePage/RivoCTA";
-import { RIVOCONTENT, RIVOPRODUCT, RIVOPRODUCTCATEGORY } from "@/Constants/data";
+import {
+  RIVOCONTENT,
+  RIVOPRODUCT,
+  RIVOPRODUCTCATEGORY,
+} from "@/Constants/data";
 
 export default function Home() {
   //page content
@@ -18,12 +22,13 @@ export default function Home() {
   const productCategory = RIVOPRODUCTCATEGORY;
   return (
     <main>
-      {/* <RivoHero />
+      <RivoHero />
       <div className="rivContainer">
         <BestSelling
           contentObj={pageContent.sectionBest}
           bestProducts={bestProd}
         />
+        {/*
         <OurProducts
           contentObj={pageContent.sectionProdcut}
           bestProducts={normalProd}
@@ -32,8 +37,8 @@ export default function Home() {
         <DesignerClothes
           contentObj={pageContent.sectionClothes}
           prodCategory={productCategory}
-        />
-      </div> */}
+        />*/}
+      </div>
     </main>
   );
 }
