@@ -11,7 +11,7 @@ const RivoButton = ({ label, link, variant }: Props) => {
     return (
       <Link
         href={link}
-        className="text-rivo-700 border border-rivo-700 text-xl py-2 px-10 uppercase"
+        className="text-rivo-700 border border-rivo-700 text-xl py-2 px-10 uppercase rounded"
       >
         {label}
       </Link>
@@ -21,7 +21,7 @@ const RivoButton = ({ label, link, variant }: Props) => {
     return (
       <Link
         href={link}
-        className="text-rivo-700 border border-rivo-700 text-xl py-2 px-10 inline-flex items-center"
+        className="text-rivo-700 border border-rivo-700 text-xl py-2 px-10 inline-flex items-center rounded"
       >
         {label}
         <MoveRight strokeWidth={1.5} className="ml-4" />
@@ -33,7 +33,7 @@ const RivoButton = ({ label, link, variant }: Props) => {
     return (
       <Link
         href={link}
-        className="bg-rivo-700 text-white text-xl py-4 px-16 uppercase"
+        className="bg-rivo-700 text-white text-xl py-4 px-16 uppercase rounded shadow-2xl"
       >
         {label}
       </Link>

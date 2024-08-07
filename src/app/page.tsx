@@ -1,6 +1,7 @@
 import RivoHero from "@/Components/Hero/RivoHero";
 import BestSelling from "@/Components/HomePage/BestSelling";
 import OurProducts from "@/Components/HomePage/OurProducts";
+import RivoCTA from "@/Components/HomePage/RivoCTA";
 import { RIVOCONTENT, RIVOPRODUCT } from "@/Constants/data";
 
 export default function Home() {
@@ -16,14 +17,16 @@ export default function Home() {
     <main>
       <RivoHero />
       <div className="rivContainer">
-      <BestSelling
-        contentObj={pageContent.sectionBest}
-        bestProducts={bestProd}
-      />
-      <OurProducts
-        contentObj={pageContent.sectionProdcut}
-        bestProducts={normalProd}
-      />
+        <BestSelling
+          contentObj={pageContent.sectionBest}
+          bestProducts={bestProd}
+        />
+        <OurProducts
+          contentObj={pageContent.sectionProdcut}
+          bestProducts={normalProd}
+        />
+        <RivoCTA />
+        <div></div>
       </div>
     </main>
   );
