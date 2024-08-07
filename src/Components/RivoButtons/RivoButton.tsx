@@ -1,3 +1,4 @@
+import { MoveRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 type Props = {
@@ -15,7 +16,20 @@ const RivoButton = ({ label, link, variant }: Props) => {
         {label}
       </Link>
     );
-  } else {
+  }else if(variant === "iconArrow") {
+    // /<MoveRight color="#f5d426" strokeWidth={1.5} />
+    return (
+      <Link
+        href={link}
+        className="text-rivo-700 border border-rivo-700 text-xl py-2 px-10 inline-flex items-center"
+      >
+        {label}
+        <MoveRight strokeWidth={1.5} className="ml-4" />
+      </Link>
+    );
+  }
+  
+  else {
     return (
       <Link
         href={link}
