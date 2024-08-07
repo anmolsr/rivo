@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body, body p{
+  font-family: var(--font-poppins);
+  @apply text-base font-medium leading-6;
+}
+
+h1,h2{
+  @apply text-rivo-700;
+}
+h2{
+  @apply font-robotoSlab font-medium text-[64px] leading-relaxed;
+}
+.rivContainer{
+  @apply container max-w-rivoWidth m-auto;
+}
